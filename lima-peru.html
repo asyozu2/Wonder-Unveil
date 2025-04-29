@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lima, Peru Travel Guide | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="lima-peru.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                    <input type="search" placeholder="Search..." class="search-input">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <select name="filter" id="filterSelect">
+                        <option value="all">All</option>
+                        <option value="travel">Travel</option>
+                        <option value="eat">Eat</option>
+                        <option value="videos">Videos</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="lima-guide">
+        <div class="hero">
+            <h2>Lima: Peru’s Gastronomic & Cultural Capital</h2>
+            <p class="p1">A sprawling coastal city where colonial history, world-class cuisine, and Pacific Ocean sunsets converge.</p>
+        </div>
+    
+        <section class="guide-content">
+            <h3>About Lima</h3>
+            <p>
+                Founded in 1535 by the Spanish conquistador Francisco Pizarro, Lima is Peru’s capital and largest city.  
+                Nestled along the Pacific coast, it blends elegant colonial architecture with vibrant modern districts, earning its reputation as the “City of Kings.”
+            </p>
+    
+            <h3>Top Attractions</h3>
+            <ul>
+                <li><strong>Plaza Mayor:</strong> The historic heart of Lima, surrounded by the Presidential Palace, Cathedral, and ornate colonial arcades.</li>
+                <li><strong>Miraflores Boardwalk (Malecón):</strong> Clifftop parks overlooking the Pacific—perfect for sunset strolls and paragliding.</li>
+                <li><strong>Barranco District:</strong> Lima’s bohemian neighborhood, full of street art, live music venues, and the iconic Puente de los Suspiros.</li>
+                <li><strong>Museo Larco:</strong> Housed in an 18th-century vice-royal mansion, this museum showcases pre-Columbian art and the famous erotic pottery gallery.</li>
+            </ul>
+    
+            <h3>Must-Try Culinary Experiences</h3>
+            <ul>
+                <li><strong>Ceviche:</strong> Peru’s national dish—fresh raw fish cured in lime juice, tossed with onions, cilantro, and aji pepper.</li>
+                <li><strong>Lomo Saltado:</strong> Stir-fried beef with onions, tomatoes, and fries, served over rice—a fusion of Chinese and Peruvian flavors.</li>
+                <li><strong>Anticuchos:</strong> Grilled beef heart skewers, slathered in spicy marinades and served with boiled potatoes and corn.</li>
+                <li><strong>Chocolates & Pisco Sours:</strong> Sample artisanal chocolates in Barranco and sip the classic Pisco Sour at a historic bar in Miraflores.</li>
+            </ul>
+    
+            <h3>Neighborhood Highlights & Experiences</h3>
+            <ul>
+                <li><strong>Magic Water Circuit:</strong> Parque de la Reserva’s illuminated fountains and nightly light shows.</li>
+                <li><strong>Parque Kennedy:</strong> The bustling heart of Miraflores—street vendors, cat lounges, and open-air cafes.</li>
+                <li><strong>Historic Churches:</strong> Explore Santo Domingo and San Francisco with their catacombs and Baroque interiors.</li>
+                <li><strong>Surf in Costa Verde:</strong> Catch beginner waves off Miraflores or watch the pros at Punta Roquitas.</li>
+            </ul>
+    
+            <h3>Helpful Tips</h3>
+            <ul>
+                <li>Carry small bills and coins for taxis, street snacks, and market purchases.</li>
+                <li>Stay aware of your belongings in crowded areas—petty theft can occur.</li>
+                <li>Avoid drinking tap water; bottled water is inexpensive and widely available.</li>
+                <li>Use Uber or registered taxis after dark, especially in unfamiliar districts.</li>
+                <li>Plan visits to museums and fountains in advance—some require timed tickets.</li>
+            </ul>
+        </section>
+        <section class="photo-gallery">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <img src="pictures/miraflores.jpg" title="Aerial View of Miraflores" data-src="pictures/miraflores.jpg">
+                <img src="pictures/plazamayor.jpg" title="Plaza Mayor (Main Square)" data-src="pictures/plazamayor.jpg">
+                <img src="pictures/parquedelamor.jpg" title="Parque del Amor (Park of Love)" data-src="pictures/parquedelamor.jpg">
+                <img src="pictures/barrancodistrict.jpg" title="Barranco District" data-src="pictures/barrancodistrict.jpg">
+                <img src="pictures/costaverde.jpg" title="Costa Verde" data-src="pictures/costaverde.jpg">
+                <img src="pictures/huacapucllana.jpg" title="Huaca Pucllana" data-src="pictures/huacapucllana.jpg">
+            </div>
+        </section>
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <span class="prev" id="prevImage">&#10094;</span> <!-- Left arrow -->
+            <span class="next" id="nextImage">&#10095;</span> <!-- Right arrow -->
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="searchandfilter.js"></script>
+    <script src="imageModal.js"></script>
+</body>
+</html>

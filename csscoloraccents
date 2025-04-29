@@ -1,0 +1,330 @@
+/* 1. Earthy and Calming .navbar {
+    background-color: #2C3E50; /* Deep Slate Blue */
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+    color: #ECF0F1; /* Light text for contrast */
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #1ABC9C; /* Calming tropical teal */
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: 40px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #ECF0F1; /* Light text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1ABC9C; /* Teal hover */
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #1ABC9C;
+}
+
+.search-input {
+    background: transparent;
+    width: 350px;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #ECF0F1; /* Matches light text */
+}
+
+.searchbar i {
+    color: #1ABC9C;
+    margin-left: 8px;
+}
+
+/* 2. Ocean & Sky .navbar {
+    background: linear-gradient(to right, #0077b6, #90e0ef); /* Deep ocean blue to sky blue */
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #ffffff; /* Clean white for contrast */
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: 40px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #caf0f8; /* Soft baby blue on hover */
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+}
+
+.search-input {
+    background: transparent;
+    width: 350px;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+.searchbar i {
+    color: #ffffff;
+    margin-left: 8px;
+}
+
+/* 3. Sunset Tones .navbar {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Sunset gradient: coral to amber */
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #fff5e6; /* Soft ivory tone for contrast */
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: 40px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #fff5e6; /* Light cream text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcccb; /* Soft sunset pink on hover */
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #fff5e6;
+}
+
+.search-input {
+    background: transparent;
+    width: 350px;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #fff5e6;
+}
+
+.searchbar i {
+    color: #fff5e6;
+    margin-left: 8px;
+}
+
+/* 4. Tropical Escape .navbar {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4b3832;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: 40px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #4b3832;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffaaa7;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ffaaa7;
+}
+
+.search-input {
+    background: transparent;
+    width: 350px;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #4b3832;
+}
+
+/* 5. Rustic Vintage .navbar {
+    background: linear-gradient(to right, #cbb994, #a1887f);
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #3e2723;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: 40px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #3e2723;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #d7ccc8;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #d7ccc8;
+}
+
+.search-input {
+    background: transparent;
+    width: 350px;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #3e2723;
+}
+
+/* 6. Twilight Chill .navbar {
+    background: linear-gradient(to right, #232526, #414345);
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #e0e0e0;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: 40px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #dc2430;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #7b4397;
+}
+
+.search-input {
+    background: transparent;
+    width: 350px;
+    height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #e0e0e0;
+}

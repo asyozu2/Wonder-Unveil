@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="eatpage.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                <input type="search" placeholder="Search..." class="search-input">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <select name="filter" id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="travel">Travel</option>
+                    <option value="eat">Eat</option>
+                    <option value="videos">Videos</option>
+                </select>
+            </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home" style="background: url('pictures/eatbg.jpg') no-repeat center/cover;">
+        <div class="hero">
+            <h2>Discover Local Eats</h2>
+            <p class="p1">Taste the culture wherever you go</p>
+        </div>
+    </main>
+
+    <section class="travel-sections">
+        <p class="p2">
+            From street food to fine dining, explore mouth-watering destinations and flavors around the globe.
+            Here's a look at some must-try dishes from our latest food adventures. <br>
+            "Savor the flavors of the world, from street food to gourmet delicacies, and every bite in between."
+        </p>
+        <div class="travel-list">
+            <a href="southeastasia.html">
+            <div class="travel-item item1" style="background-image: url('pictures/southeastasia.jpg');">
+                <div>Southeast Asian Delights</div>
+            </a>
+            </div>
+            <a href="american.html">
+            <div class="travel-item item2" style="background-image: url('pictures/american.jpg');">
+                <div>American Cuisines</div>
+            </a>
+            </div>
+            <a href="european.html">
+            <div class="travel-item item3" style="background-image: url('pictures/european.jpg');">
+                <div>European Cuisines</div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="posts-container">
+        <div class="post">
+            <a href="streetfood.html" target="_blank" class="read-more">
+            <img src="pictures/isawtokwek.jpg">
+            <h3>🍢 Street Food Diaries: Manila Edition</h3>
+            <p>From isaw to kwek-kwek, the vibrant streets of Manila offer a flavorful adventure you can’t miss. We explored the city’s iconic food stalls and uncovered the secrets of these crowd-favorite snacks.</p>
+            Read More</a>
+        </div>
+
+        <div class="post">
+            <a href="ramen.html" target="_blank" class="read-more">
+            <img src="pictures/tokyoramen.jpg">
+            <h3>🍜 Ramen & Beyond: Tokyo's Comfort Dishes</h3>
+            <p>In the heart of Tokyo, we slurped our way through the best ramen shops and found hidden izakayas serving soul-warming dishes. Here's our full flavor-filled journey!</p>
+            <a href="ramen.html" target="_blank" class="read-more">Read More</a>
+        </div>
+
+        <div class="post">
+            <a href="tiramisu.html" target="_blank" class="read-more">
+            <img src="pictures/tiramisu.jpg" alt="Tiramisu">
+            <h3>🍰 Tiramisu: A Slice of Italian Heaven</h3>
+            <p>Experience the rich layers of coffee-soaked ladyfingers and creamy mascarpone in this classic Italian dessert. A delightful indulgence for any coffee lover!</p>
+            Read More</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="searchandfilter.js"></script>
+</body>
+</html>

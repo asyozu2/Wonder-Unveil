@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="travelpage.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                <input type="search" placeholder="Search..." class="search-input">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <select name="filter" id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="travel">Travel</option>
+                    <option value="eat">Eat</option>
+                    <option value="videos">Videos</option>
+                </select>
+            </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html"" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home">
+        <div class="hero">
+            <h2>Travel the World</h2>
+            <p class="p1">Explore iconic destinations and hidden gems</p>
+        </div>
+    </main>
+
+    <section class="travel-sections">
+        <p class="p2">
+            Discover our top travel spots and stories from around the globe. Whether you're into ancient ruins,
+            scenic beaches, or bustling cities—there's something here for every adventurer. <br>Embark on a journey to the world's most 
+            captivating destinations. Adventure awaits!
+        </p>
+        <div class="travel-list">
+            <div class="travel-item searchable-item" data-category="travel">
+                <a href="venice.html"><div>Venice, Italy</div></a>
+            </div>
+            <div class="travel-item searchable-item" data-category="travel">
+                <a href="kyoto.html"><div>Kyoto, Japan</div></a>
+            </div>
+            <div class="travel-item searchable-item" data-category="travel">
+                <a href="macchu.html"><div>Machu Picchu, Peru</div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-posts">
+        <article class="post">
+            <img src="pictures/puertoprincesa.jpg" alt="Puerto Princesa">
+            <div class="post-content">
+                <p><strong>Admin</strong> - Mar 25, 2023 - 1 min read</p>
+                <h3>Puerto Princesa in a Budget</h3>
+                <p>Who says paradise has to be expensive? Here’s how to make the most of Puerto Princesa on a budget.</p>
+            </div>
+        </article>
+
+        <article class="post">
+            <img src="pictures/eiffeltower.jpg" alt="A Day in Paris">
+            <div class="post-content">
+                <p><strong>Admin</strong> - Feb 15, 2023 - 2 min read</p>
+                <h3>A Day in Paris</h3>
+                <p>From sunrise at the Eiffel Tower to a night walk by the Seine—explore Paris like never before...</p>
+            </div>
+        </article>
+
+        <article class="post">
+            <img src="pictures/santorinisunset.jpg" alt="Santorini Sunsets">
+            <div class="post-content">
+                <p><strong>Admin</strong> - Jan 10, 2023 - 3 min read</p>
+                <h3>Santorini Sunsets</h3>
+                <p>Experience the breathtaking views of the Aegean Sea and the white-washed buildings of Santorini...</p>
+            </div>
+        </article>
+
+        <article class="post">
+            <img src="pictures/bali.jpg" alt="Bali Adventure">
+            <div class="post-content">
+                <p><strong>Admin</strong> - Dec 5, 2022 - 4 min read</p>
+                <h3>Bali Adventure</h3>
+                <p>Join us as we uncover hidden waterfalls, lush jungles, and the best Balinese food...</p>
+            </div>
+        </article>
+    </section>
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="fullonfunctions.js"></script>
+</body>
+</html>

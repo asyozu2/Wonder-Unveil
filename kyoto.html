@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="kyoto.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                <input type="search" placeholder="Search..." class="search-input">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <select name="filter" id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="travel">Travel</option>
+                    <option value="eat">Eat</option>
+                    <option value="videos">Videos</option>
+                </select>
+            </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="travel">
+        <div class="hero">
+            <h2>Discover Kyoto, Japan</h2>
+            <p class="p1">The cultural heart of Japan</p>
+        </div>
+
+        <section id="travel-guides" class="travel-guides">
+            <h2>Explore Our Travel Guides</h2>
+            <p>Discover detailed travel guides to your favorite destinations around the world.</p>
+
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <img src="pictures/kyoto.jpg" alt="Guide to Kyoto">
+                    <h3>Guide to Kyoto</h3>
+                    <p>Explore the enchanting canals and historical landmarks of Venice in this comprehensive guide.</p>
+                    <a href="kyoto-guide.html" class="btn">Read Guide</a>
+                </div>
+
+                <div class="guide-card">
+                    <img src="pictures/osaka.jpg" alt="Guide to Osaka">
+                    <h3>Guide to Osaka</h3>
+                    <p>Experience the romance and culture of Paris, with detailed information about museums, food, and more.</p>
+                    <a href="osaka-guide.html" class="btn">Read Guide</a>
+                </div>
+                <!-- Add more guide cards as needed -->
+            </div>
+        </section>
+    
+        <section class="destination">
+            <h3>About Kyoto</h3>
+            <p class="intro">Kyoto, located in the Kansai region of Japan, is renowned for its historical significance, traditional tea houses, exquisite gardens, and breathtaking temples. As the former capital of Japan for over a thousand years, Kyoto is home to 17 UNESCO World Heritage Sites, making it one of Japan’s most culturally rich cities.</p>
+        </section>
+    
+        <section class="highlights">
+            <h3>Top Attractions</h3>
+            <ul>
+                <li><strong>Fushimi Inari Taisha:</strong> Famous for its iconic thousands of red torii gates that lead up Mount Inari, offering a spiritual and scenic journey.</li>
+                <li><strong>Kinkaku-ji (Golden Pavilion):</strong> This Zen Buddhist temple is known for its stunning golden exterior, beautifully reflected in the surrounding pond.</li>
+                <li><strong>Arashiyama Bamboo Grove:</strong> A mesmerizing bamboo forest that creates a unique atmosphere for a peaceful stroll. It's one of Kyoto’s most iconic spots.</li>
+                <li><strong>Gion District:</strong> A traditional geisha district, where you can still witness the beauty of ancient tea houses and glimpse geishas on their way to appointments.</li>
+            </ul>
+        </section>
+    
+        <section class="experiences">
+            <h3>Unique Experiences</h3>
+            <ul>
+                <li><strong>Tea Ceremony:</strong> Kyoto is famous for its tea culture, and experiencing a traditional Japanese tea ceremony is a must-do to understand the heart of Japanese hospitality.</li>
+                <li><strong>Kimono Wearing:</strong> Experience the elegance of Kyoto by dressing in a kimono and strolling through the historic streets and temples of the city.</li>
+                <li><strong>Zen Garden Meditation:</strong> Visit one of Kyoto’s serene Zen gardens, such as those at Kinkaku-ji or Ryoan-ji, to practice meditation and find inner peace.</li>
+            </ul>
+        </section>
+    
+        <section class="local-flavors">
+            <h3>Local Flavors</h3>
+            <p>Kyoto’s cuisine is deeply connected to its traditions and nature. The city’s culinary offerings are based on seasonal ingredients, simple yet exquisite flavors, and centuries-old recipes. Here are some must-try dishes:</p>
+            <ul>
+                <li><strong>Kaiseki:</strong> A traditional multi-course meal that emphasizes seasonal ingredients and presentation, often served in the best restaurants and tea houses in Kyoto.</li>
+                <li><strong>Yudofu:</strong> A hot pot dish made with tofu, commonly served at Buddhist temples in Kyoto. It’s light yet rich in flavor.</li>
+                <li><strong>Kyo-wagashi:</strong> Traditional Japanese sweets often made with sweet red bean paste, perfect for pairing with matcha tea during a tea ceremony.</li>
+            </ul>
+        </section>
+    
+        <section class="photo-gallery">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <img src="pictures/fushimi.jpg" title="Fushimi Inari Taisha" data-src="pictures/fushimi.jpg">
+                <img src="pictures/kinkaku-ji.jpg" title="Kinkaku-ji Golden Pavilion" data-src="pictures/kinkaku-ji.jpg">
+                <img src="pictures/arashiyama.jpg" title="Arashiyama Bamboo Grove" data-src="pictures/arashiyama.jpg">
+            </div>
+        </section>
+        <!-- Travel Journal Section -->
+        <section class="travel-journal">
+            <h3>Share Your Travel Experience</h3>
+            <form id="journalForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="e.g., Venice" required>
+
+                <label for="date">Date of Travel:</label>
+                <input type="date" id="date" required>
+
+                <label for="experience">Your Experience:</label>
+                <textarea id="experience" placeholder="Describe your trip..." rows="5" required></textarea>
+
+                <label for="image">Upload Image (optional):</label>
+                <input type="file" id="image" accept="image/*">
+
+                <button type="submit">Post Journal</button>
+            </form>
+
+            <div id="journalEntries">
+                <h3>Previous Journals</h3>
+                <!-- Dynamic journal entries will appear here -->
+            </div>
+        </section>
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <span class="prev" id="prevImage">&#10094;</span> <!-- Left arrow -->
+            <span class="next" id="nextImage">&#10095;</span> <!-- Right arrow -->
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="searchandfilter.js"></script>
+    <script src="imageModal.js"></script>
+    <script src="journal.js"></script>
+</body>
+</html>

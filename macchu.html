@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machu Picchu | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="macchu.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                <input type="search" placeholder="Search..." class="search-input">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <select name="filter" id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="travel">Travel</option>
+                    <option value="eat">Eat</option>
+                    <option value="videos">Videos</option>
+                </select>
+            </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="travel">
+        <div class="hero">
+            <h2>Explore Machu Picchu, Peru</h2>
+            <p class="p1">A breathtaking wonder of the world</p>
+        </div>
+
+        <section id="travel-guides" class="travel-guides">
+            <h2>Explore Our Travel Guides</h2>
+            <p>Discover detailed travel guides to your favorite destinations around the world.</p>
+
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <img src="pictures/machu.jpg" alt="Guide to Venice">
+                    <h3>Guide to Machu Picchu</h3>
+                    <p>Explore the ancient citadel perched high in the Andes, Machu Picchu offers breathtaking views and rich Inca history in this comprehensive guide.</p>
+                    <a href="machu-guide.html" class="btn">Read Guide</a>
+                </div>
+
+                <div class="guide-card">
+                    <img src="pictures/lima.jpg" alt="Guide to Paris">
+                    <h3>Guide to Lima, Peru</h3>
+                    <p>Experience Peru’s Gastronomic & Cultural Capital.</p>
+                    <a href="lima-peru.html" class="btn">Read Guide</a>
+                </div>
+                <!-- Add more guide cards as needed -->
+            </div>
+        </section>
+    
+        <section class="destination">
+            <h3>About Machu Picchu</h3>
+            <p class="intro">Machu Picchu, an ancient Inca city perched high in the Andes Mountains of Peru, is one of the most iconic and mysterious archaeological sites in the world. Built in the 15th century and later abandoned, it remained hidden from the outside world until its rediscovery in 1911. Today, it is a UNESCO World Heritage Site and one of the New Seven Wonders of the World.</p>
+        </section>
+    
+        <section class="highlights">
+            <h3>Top Attractions</h3>
+            <ul>
+                <li><strong>The Inca Trail:</strong> A famous trekking route leading to Machu Picchu, offering spectacular views of the Andes and passing through stunning Incan ruins.</li>
+                <li><strong>The Sun Gate (Inti Punku):</strong> A viewpoint at the end of the Inca Trail, offering panoramic views of Machu Picchu as the sun rises over the ancient citadel.</li>
+                <li><strong>The Temple of the Sun:</strong> A circular structure at Machu Picchu that is aligned with the sun during the solstices, reflecting the Incan’s advanced understanding of astronomy.</li>
+                <li><strong>Intihuatana Stone:</strong> A ritual stone associated with astronomical and religious ceremonies, believed to have been used by the Incas to track the movement of the sun.</li>
+            </ul>
+        </section>
+    
+        <section class="experiences">
+            <h3>Unique Experiences</h3>
+            <ul>
+                <li><strong>Sunrise at Machu Picchu:</strong> Watching the first rays of sunlight illuminate the ancient city is a once-in-a-lifetime experience, offering a sense of awe and wonder.</li>
+                <li><strong>Trekking the Inca Trail:</strong> Embark on a multi-day trek through stunning landscapes, passing through Incan ruins, lush cloud forests, and picturesque villages, before reaching Machu Picchu.</li>
+                <li><strong>Cultural Tours:</strong> Take guided tours with local historians and guides who provide deep insights into the history, culture, and engineering marvels of the Inca civilization.</li>
+            </ul>
+        </section>
+    
+        <section class="local-flavors">
+            <h3>Local Flavors</h3>
+            <p>Peruvian cuisine is diverse and vibrant, reflecting the country's rich cultural heritage. In the area around Machu Picchu, you'll find traditional Andean dishes that have been passed down through generations:</p>
+            <ul>
+                <li><strong>Ceviche:</strong> Fresh fish marinated in citrus juices, typically served with onions, cilantro, and chili, is a staple of Peruvian coastal cuisine.</li>
+                <li><strong>Cuy:</strong> Roasted guinea pig, a traditional Andean dish often enjoyed during festivals and special occasions.</li>
+                <li><strong>Trucha (Trout):</strong> Often served in the Sacred Valley, this fish is typically pan-fried and seasoned with local herbs and spices.</li>
+                <li><strong>Chicha Morada:</strong> A sweet beverage made from purple corn, often flavored with cinnamon and cloves, and served cold as a refreshing drink.</li>
+            </ul>
+        </section>
+    
+        <section class="photo-gallery">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <img src="pictures/machu.jpg" title="Machu Picchu" data-src="pictures/machu.jpg">
+                <img src="pictures/theincatrail.jpg" title="The Inca Trail" data-src="pictures/theincatrail.jpg">
+                <img src="pictures/sunrisemachu.jpg" title="Sunrise over Machu Picchu" data-src="pictures/sunrisemachu.jpg">
+            </div>
+        </section>
+        <!-- Travel Journal Section -->
+        <section class="travel-journal">
+            <h3>Share Your Travel Experience</h3>
+            <form id="journalForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="e.g., Venice" required>
+
+                <label for="date">Date of Travel:</label>
+                <input type="date" id="date" required>
+
+                <label for="experience">Your Experience:</label>
+                <textarea id="experience" placeholder="Describe your trip..." rows="5" required></textarea>
+
+                <label for="image">Upload Image (optional):</label>
+                <input type="file" id="image" accept="image/*">
+
+                <button type="submit">Post Journal</button>
+            </form>
+
+            <div id="journalEntries">
+                <h3>Previous Journals</h3>
+                <!-- Dynamic journal entries will appear here -->
+            </div>
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <span class="prev" id="prevImage">&#10094;</span> <!-- Left arrow -->
+            <span class="next" id="nextImage">&#10095;</span> <!-- Right arrow -->
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="searchandfilter.js"></script>
+    <script src="imageModal.js"></script>
+    <script src="journal.js"></script>
+</body>
+</html>

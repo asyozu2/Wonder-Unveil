@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Travel Guide | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="paris-guide.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                    <input type="search" placeholder="Search..." class="search-input">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <select name="filter" id="filterSelect">
+                        <option value="all">All</option>
+                        <option value="travel">Travel</option>
+                        <option value="eat">Eat</option>
+                        <option value="videos">Videos</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="paris-guide">
+        <div class="hero">
+            <h2>Paris: The City of Lights</h2>
+            <p class="p1">A vibrant metropolis with rich history, culture, and art, Paris is a destination that captivates all who visit.</p>
+        </div>
+    
+        <section class="guide-content">
+            <h3>About Paris</h3>
+            <p>Paris, the capital of France, is known for its iconic landmarks, world-class museums, and elegant streets. It's a city that blends timeless beauty with modern charm, offering something for every traveler.</p>
+            
+            <h3>Top Attractions</h3>
+            <ul>
+                <li><strong>Eiffel Tower:</strong> Admire breathtaking views of Paris from this world-famous landmark.</li>
+                <li><strong>Louvre Museum:</strong> Explore an extensive collection of art, including the iconic Mona Lisa.</li>
+                <li><strong>Notre-Dame Cathedral:</strong> Visit this Gothic masterpiece and take in its stunning architecture.</li>
+                <li><strong>Champs-Élysées:</strong> Stroll down one of the most famous avenues in the world, lined with shops, theaters, and cafes.</li>
+            </ul>
+    
+            <h3>Best Experiences</h3>
+            <ul>
+                <li><strong>Seine River Cruise:</strong> Take a boat ride along the Seine to see the city's landmarks from a unique perspective.</li>
+                <li><strong>Picnic at Luxembourg Gardens:</strong> Enjoy a relaxing afternoon in one of Paris’ most beautiful parks.</li>
+                <li><strong>Explore Montmartre:</strong> Wander through the charming streets of this historic neighborhood, home to artists and the famous Sacré-Cœur Basilica.</li>
+            </ul>
+    
+            <h3>Local Cuisine</h3>
+            <ul>
+                <li><strong>Croissant:</strong> Start your day with this buttery, flaky pastry, a French breakfast staple.</li>
+                <li><strong>Boeuf Bourguignon:</strong> A classic French dish made with beef, red wine, and vegetables.</li>
+                <li><strong>Crêpes:</strong> These thin pancakes are served with a variety of fillings, both sweet and savory.</li>
+            </ul>
+    
+            <h3>Helpful Tips for Travelers</h3>
+            <p>Here are some tips to make your Parisian adventure even better:</p>
+            <ul>
+                <li>Learn a few basic French phrases – Parisians appreciate it when visitors make an effort to speak the language.</li>
+                <li>Be prepared for pickpockets – keep an eye on your belongings, especially in crowded tourist spots.</li>
+                <li>Get a Paris Pass to skip the lines at popular attractions and use public transport easily.</li>
+                <li>Take time to explore Paris’ neighborhoods, like Le Marais and Le Quartier Latin, to experience the city like a local.</li>
+            </ul>
+        </section>
+
+        <section class="photo-gallery">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <img src="pictures/eiffeltowersunset.jpg" title="Aerial View of Miraflores" data-src="pictures/eiffeltowersunset.jpg">
+                <img src="pictures/montmartre.jpg" title="Plaza Mayor (Main Square)" data-src="pictures/montmartre.jpg">
+                <img src="pictures/lourvepyramid.jpg" title="Parque del Amor (Park of Love)" data-src="pictures/lourvepyramid.jpg">
+                <img src="pictures/notre-dame.jpg" title="Barranco District" data-src="pictures/notre-dame.jpg">
+                <img src="pictures/cafescene.jpg" title="Costa Verde" data-src="pictures/cafescene.jpg">
+            </div>
+        </section>
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <span class="prev" id="prevImage">&#10094;</span> <!-- Left arrow -->
+            <span class="next" id="nextImage">&#10095;</span> <!-- Right arrow -->
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="searchandfilter.js"></script>
+    <script src="imageModal.js"></script>
+</body>
+</html>

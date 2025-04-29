@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                <input type="search" placeholder="Search..." class="search-input">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <select name="filter" id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="travel">Travel</option>
+                    <option value="eat">Eat</option>
+                    <option value="videos">Videos</option>
+                </select>
+            </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home">
+        <div class="hero">
+            <h2>Watch & Wander</h2>
+            <p class="p1">Journey through moments, captured in motion</p>
+        </div>
+    </main>
+
+    <section class="video-gallery">
+        <p class="p2">
+            Unwind in paradise—explore peaceful retreats, tranquil beaches, and moments of serenity. Whether it's a calming spa, a serene nature hike,
+            or simply watching the sunset, find your perfect escape and let your worries melt away. Relax, recharge, and reconnect with the world’s most
+            soothing destinations.
+        </p>
+        <div class="video-post">
+            <video width="100%" height="auto" controls poster="pictures/kyotoposter.jpg">
+                <source src="videos/The perfect KYOTO morning itinerary.mp4" type="video/mp4" id="comfort-video">
+                Your browser does not support the video tag.
+            </video>
+            <h3>📍 A Morning in Kyoto</h3>
+            <p>Take a peaceful stroll through the historic streets of Kyoto, Japan, with us — where every corner tells a story.</p>
+        </div>
+    
+        <div class="video-post">
+            <video width="100%" height="auto" controls poster="pictures/bangkokposter.jpg" id="comfort-video">
+                <source src="videos/Jodd Fair Night Market Bangkok Thailand - Thai Street Food.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>🍲 Night Market Bites: Bangkok</h3>
+            <p>Explore Thailand’s famous street food scene with a close-up look at sizzling dishes, lively locals, and late-night fun.</p>
+        </div>
+    
+        <div class="video-post">
+            <video width="100%" height="auto" controls poster="pictures/bohol.jpg" id="comfort-video">
+                <source src="videos/SUNRISE over the CHOCOLATE HILLS： Is it worth getting up for？ ｜ Bohol, Philippines ｜ Vlog 076.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>🌄 Sunrise Over Chocolate Hills, Bohol</h3>
+            <p>Marvel at the unique landscape of the Chocolate Hills in Bohol during sunrise.
+                The conical hills, covered in green grass that turns brown in the dry season, create a surreal and picturesque scene as the sun rises.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="searchandfilter.js"></script>
+    <script src="videoscript.js"></script>
+</body>
+</html>

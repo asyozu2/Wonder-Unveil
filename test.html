@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog with Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <style>
+        /* Basic layout for the image */
+        img {
+            width: 80%;  /* Adjust the width of the image */
+            margin: 20px auto;
+            display: block;
+            cursor: pointer;
+        }
+
+        /* Fullscreen style for the image when clicked */
+        .full-screen {
+            width: 100vw;  /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            object-fit: contain;
+        }
+
+        /* Button style for Locate Image */
+        .locate-btn {
+            display: block;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .locate-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Map styling */
+        #map {
+            height: 400px;  /* Smaller map */
+            width: 80%;     /* Width of the map */
+            margin: 20px auto;
+        }
+
+        /* Hide the map initially */
+        #map {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Travel Blog</h1>
+
+    <!-- Image from Venice, clicking on it will make it full screen -->
+    <img src="pictures/eatbg.jpg" alt="Venice" id="image" onclick="makeFullScreen()" />
+
+    <!-- Locate Image Button -->
+    <button class="locate-btn" onclick="showMap()">Locate Image</button>
+
+    <!-- Div for the map -->
+    <div id="map"></div>
+
+    <script>
+        var map;
+        var marker;
+        var imageCoordinates = [45.4408, 12.3155]; // Coordinates for Venice
+        var mapVisible = false; // Flag to track if map is visible
+        var isFullScreen = false; // Flag to track if the image is in full screen
+
+        // Function to make the image full screen
+        function makeFullScreen() {
+            var image = document.getElementById('image');
+
+            if (isFullScreen) {
+                // If it's already full screen, return to original size
+                image.classList.remove('full-screen');
+            } else {
+                // Add class to make image full screen
+                image.classList.add('full-screen');
+            }
+
+            isFullScreen = !isFullScreen; // Toggle the full screen flag
+        }
+
+        // Function to show the map when button is clicked
+        function showMap() {
+            if (!mapVisible) {
+                // Initialize the map and center it on the image's coordinates
+                map = L.map('map').setView(imageCoordinates, 13);
+
+                // Add OpenStreetMap tile layer
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                // Add a marker on the map at the image's coordinates
+                marker = L.marker(imageCoordinates).addTo(map);
+
+                // Show the map as visible
+                mapVisible = true;
+
+                // Update button text to "Hide Map" after map is shown  w
+                document.querySelector('.locate-btn').innerHTML = "Hide Map";
+                document.getElementById("map").style.display = "block"; // Show map
+            } else {
+                // If map is visible, hide the map
+                map.remove();
+                mapVisible = false;
+
+                // Update button text to "Locate Image"
+                document.querySelector('.locate-btn').innerHTML = "Locate Image";
+                document.getElementById("map").style.display = "none"; // Hide map
+            }
+        }
+    </script>
+
+</body>
+</html>

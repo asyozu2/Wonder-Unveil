@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaka, Japan Travel Guide | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="osaka-guide.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                    <input type="search" placeholder="Search..." class="search-input">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <select name="filter" id="filterSelect">
+                        <option value="all">All</option>
+                        <option value="travel">Travel</option>
+                        <option value="eat">Eat</option>
+                        <option value="videos">Videos</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="osaka-guide">
+        <div class="hero">
+            <h2>Osaka: Japan’s Culinary Capital</h2>
+            <p class="p1">A bustling metropolis famous for its street food, vibrant nightlife, and friendly local culture.</p>
+        </div>
+    
+        <section class="guide-content">
+            <h3>About Osaka</h3>
+            <p>Osaka is Japan’s third-largest city and is affectionately known as “the nation’s kitchen.” With a laid-back vibe and a reputation for delicious, affordable eats, Osaka offers travelers everything from historic temples to neon-lit entertainment districts.</p>
+    
+            <h3>Top Attractions</h3>
+            <ul>
+                <li><strong>Osaka Castle:</strong> Explore the sprawling grounds and climb to the top of this iconic 16th-century fortress for panoramic city views.</li>
+                <li><strong>Dōtonbori:</strong> Wander neon-lit streets filled with street vendors, giant signboards, and the famous Glico Running Man.</li>
+                <li><strong>Shinsekai & Tsutenkaku Tower:</strong> Step back in time in this retro district, sample local snacks, and ride up Tsutenkaku for a nostalgic skyline view.</li>
+                <li><strong>Umeda Sky Building:</strong> Walk the “Floating Garden Observatory” and take in sweeping vistas of Osaka’s modern skyscrapers.</li>
+            </ul>
+    
+            <h3>Best Experiences</h3>
+            <ul>
+                <li><strong>Street Food Crawl in Kuromon Ichiba:</strong> Taste fresh takoyaki, grilled seafood, and seasonal produce at this famous market.</li>
+                <li><strong>Evening River Cruise on the Tombori River:</strong> See Dōtonbori’s lights from the water while sampling local snacks on board.</li>
+                <li><strong>Visit Universal Studios Japan:</strong> Enjoy thrilling rides, the Wizarding World of Harry Potter, and seasonal events.</li>
+            </ul>
+    
+            <h3>Local Cuisine</h3>
+            <ul>
+                <li><strong>Takoyaki:</strong> Octopus-filled batter balls topped with savory sauce, mayo, and bonito flakes—a true Osaka icon.</li>
+                <li><strong>Okonomiyaki:</strong> A savory pancake loaded with cabbage, egg, meat or seafood, and your choice of toppings.</li>
+                <li><strong>Kushikatsu:</strong> Deep-fried skewers of meat, seafood, and vegetables, best enjoyed dipped in a communal sauce (one dip per skewer!).</li>
+            </ul>
+    
+            <h3>Helpful Tips for Travelers</h3>
+            <p>Make the most of your Osaka adventure with these tips:</p>
+            <ul>
+                <li>Grab an ICOCA or Kansai One Pass for seamless travel on trains, subways, and buses.</li>
+                <li>Bring cash—many street stalls and small restaurants don’t accept cards.</li>
+                <li>Learn “kuidaore”—Osaka’s motto meaning “eat until you drop”—and don’t be shy about ordering seconds.</li>
+                <li>Explore hidden alleys around Namba and Tenjinbashisuji for off-the-beaten-path eats and retro charm.</li>
+                <li>If you’re there in spring, wander the park around Osaka Castle for beautiful cherry-blossom views.</li>
+            </ul>
+        </section>
+        <section class="photo-gallery">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <img src="pictures/dotonburi.jpg" title="Dotonbori at Night" data-src="pictures/dotonburi.jpg">
+                <img src="pictures/osakacastle.jpg" title="Osaka Castle in Spring" data-src="pictures/osakacastle.jpg">
+                <img src="pictures/Osaka-Shinsekai.jpg" title="Shinsekai District" data-src="pictures/Osaka-Shinsekai.jpg">
+                <img src="pictures/umedasky.jpg" title="Umeda Sky Building" data-src="pictures/umedasky.jpg">
+                <img src="pictures/osakastreetfood.jpg" title="Osaka Street Food" data-src="pictures/osakastreetfood.jpg">
+            </div>
+        </section>
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <span class="prev" id="prevImage">&#10094;</span> <!-- Left arrow -->
+            <span class="next" id="nextImage">&#10095;</span> <!-- Right arrow -->
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="searchandfilter.js"></script>
+    <script src="imageModal.js"></script>
+</body>
+</html>

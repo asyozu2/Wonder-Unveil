@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                <input type="search" placeholder="Search..." class="search-input">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <select name="filter" id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="travel">Travel</option>
+                    <option value="eat">Eat</option>
+                    <option value="videos">Videos</option>
+                </select>
+            </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="searchResultsTitle">Search results: All</h2>
+    
+        <!-- Travel Section -->
+        <section class="category-section" data-category="travel">
+            <h3 class="section-title">Travel Destinations</h3>
+            <div class="search-results">
+                <div class="searchable-item" data-category="travel">
+                    <a href="venice.html">
+                        <img src="pictures/venice.jpg" width="250px" height="150px">
+                        <br>Venice, Italy
+                    </a>
+                </div>
+                <div class="searchable-item" data-category="travel">
+                    <a href="kyoto.html">
+                        <img src="pictures/kyoto.jpg" width="250px" height="150px">
+                        <br>Kyoto, Japan
+                    </a>
+                </div>
+                <div class="searchable-item" data-category="travel">
+                    <a href="macchu.html">
+                        <img src="pictures/machu picchu.jpg" width="250px" height="150px">
+                        <br>Machu Picchu, Peru
+                    </a>
+                </div>
+            </div>
+            <div class="search-results">
+                <div class="searchable-item" data-category="travel">
+                    <a href="lima-peru.html">
+                        <img src="pictures/lima.jpg" width="250px" height="150px">
+                        <br>Lima, Peru
+                    </a>
+                </div>
+                <div class="searchable-item" data-category="travel">
+                    <a href="paris-guide.html">
+                        <img src="pictures/eiffeltower.jpg" width="250px" height="150px">
+                        <br>Paris, France
+                    </a>
+                </div>
+                <div class="searchable-item" data-category="travel">
+                    <a href="osaka-guide.html">
+                        <img src="pictures/osaka.jpg" width="250px" height="150px">
+                        <br>Osaka, Japan
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Eat Section -->
+        <section class="category-section" data-category="eat">
+            <h3 class="section-title">Eat & Cuisine</h3>
+            <div class="search-results">
+                <div class="searchable-item" data-category="eat">
+                    <a href="streetfood.html">
+                        <img src="pictures/isawtokwek.jpg" width="250px" height="150px">
+                        <br>Filipino Street Food
+                    </a>
+                </div>
+                <div class="searchable-item" data-category="eat">
+                    <a href="ramen.html">
+                        <img src="pictures/tokyoramen.jpg" width="250px" height="150px">
+                        <br>Japanese Ramen
+                    </a>
+                </div>
+                <div class="searchable-item" data-category="eat">
+                    <a href="tiramisu.html">
+                        <img src="pictures/tiramisu.jpg" width="250px" height="150px">
+                        <br>Italian Tiramisu
+                    </a>
+                </div>
+            </div>
+            <div class="search-results">
+                <div class="searchable-item" data-category="eat">
+                    <a href="southeastasia.html">
+                        <img src="pictures/southeastasia.jpg" width="250px" height="150px">
+                        <br>Southeast Asian Delights
+                    </a>
+                </div>
+                <div class="searchable-item" data-category="eat">
+                    <a href="american.html">
+                        <img src="pictures/american.jpg" width="250px" height="150px">
+                        <br>American Cuisines
+                    </a>
+                </div>
+                <div class="searchable-item" data-category="eat">
+                    <a href="european.html">
+                        <img src="pictures/european.jpg" width="250px" height="150px">
+                        <br>European Cuisines
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="category-section" data-category="videos">
+            <h3 class="section-title">Travel Videos</h3>
+            <div class="search-results">
+                <div class="searchable-item" data-category="videos" data-video="videos/The perfect KYOTO morning itinerary.mp4">
+                    <img src="pictures/kyotoposter.jpg" width="250px" height="150px">
+                    <br>A Morning in Kyoto
+                </div>
+                <div class="searchable-item" data-category="videos" data-video="videos/Jodd Fair Night Market Bangkok Thailand - Thai Street Food.mp4">
+                    <img src="pictures/bangkokposter.jpg" width="250px" height="150px">
+                    <br>Night Market Bites: Bangkok
+                </div>
+                <div class="searchable-item" data-category="videos" data-video="videos/SUNRISE over the CHOCOLATE HILLS： Is it worth getting up for？ ｜ Bohol, Philippines ｜ Vlog 076.mp4">
+                    <img src="pictures/bohol.jpg" width="250px" height="150px">
+                    <br>Sunrise Over Chocolate Hills, Bohol
+                </div>
+            </div>
+        </section>
+    
+        <div id="videoModal" class="modal">
+            <span class="close">&times;</span>
+            <video id="modalVideo" controls autoplay></video>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+    <script src="searchandfilter.js"></script>
+    <script src="imageModal.js"></script>
+    <script src="videoscript.js"></script>
+</body>
+</html>

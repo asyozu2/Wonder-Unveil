@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venice | Wonder & Unveil</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="venice.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h3 class="title">Wonder & Unveil</h3>
+            </div>
+            <div class="searchbar">
+                <form action="results.html" method="GET" class="searchbar">
+                    <input type="search" placeholder="Search..." class="search-input">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <select name="filter" id="filterSelect">
+                        <option value="all">All</option>
+                        <option value="travel">Travel</option>
+                        <option value="eat">Eat</option>
+                        <option value="videos">Videos</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="Home Page"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="travel.html" title="Travel Page"><i class="fa-solid fa-plane"></i></a></li>
+                    <li><a href="eatpage.html" title="Food Page"><i class="fa-solid fa-utensils"></i></a></li>
+                    <li><a href="videos.html" title="Videos Page"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="aboutus.html" title="About Us Page"><i class="fa-solid fa-address-card"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="travel">
+        <div class="hero">
+            <h2>Explore Venice, Italy</h2>
+            <p class="p1">A city of canals, history, and romance</p>
+        </div>
+
+        <!-- Travel Guides Section -->
+        <section id="travel-guides" class="travel-guides">
+            <h2>Explore Our Travel Guides</h2>
+            <p>Discover detailed travel guides to your favorite destinations around the world.</p>
+
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <img src="pictures/venice.jpg" alt="Guide to Venice">
+                    <h3>Guide to Venice</h3>
+                    <p>Explore the enchanting canals and historical landmarks of Venice in this comprehensive guide.</p>
+                    <a href="venice-guide.html" class="btn">Read Guide</a>
+                </div>
+
+                <div class="guide-card">
+                    <img src="pictures/paris.jpg" alt="Guide to Paris">
+                    <h3>Guide to Paris</h3>
+                    <p>Experience the romance and culture of Paris, with detailed information about museums, food, and more.</p>
+                    <a href="paris-guide.html" class="btn">Read Guide</a>
+                </div>
+                <!-- Add more guide cards as needed -->
+            </div>
+        </section>
+
+        <section class="destination">
+            <h3>About Venice</h3>
+            <p class="intro">Known for its intricate canals, breathtaking architecture, and unique charm, Venice is one of the most romantic cities in the world. Situated in northeastern Italy, the city is built on a series of islands in the Venetian Lagoon and is renowned for its rich cultural heritage.</p>
+        </section>
+
+        <section class="highlights">
+            <h3>Top Attractions</h3>
+            <ul>
+                <li><strong>St. Mark's Basilica:</strong> A stunning masterpiece of Byzantine architecture with mesmerizing mosaics and golden domes.</li>
+                <li><strong>Rialto Bridge:</strong> One of Venice's oldest and most iconic bridges, offering picturesque views of the Grand Canal.</li>
+                <li><strong>Grand Canal:</strong> The heart of Venice, where visitors can enjoy a gondola ride or hop on the vaporetto (water bus) to explore the city from the water.</li>
+                <li><strong>Doge's Palace:</strong> A magnificent Gothic building that was once the residence of the Doge, now a museum showcasing Venice's rich history.</li>
+            </ul>
+        </section>
+
+        <section class="experiences">
+            <h3>Unique Experiences</h3>
+            <ul>
+                <li><strong>Gondola Ride:</strong> No trip to Venice is complete without a ride through its famous canals, gliding past historic palaces and charming alleyways.</li>
+                <li><strong>Cicchetti Tour:</strong> Discover Venetian tapas-style dishes at local bars, perfect for a quick, flavorful bite.</li>
+                <li><strong>Venetian Mask Shopping:</strong> Venice is famous for its beautiful, intricate masks, which make for the perfect souvenir from your travels.</li>
+            </ul>
+        </section>
+
+        <section class="local-flavors">
+            <h3>Local Flavors</h3>
+            <p>Venetian cuisine is a delightful mix of fresh seafood, regional delicacies, and Italian traditions. Don’t miss these iconic dishes:</p>
+            <ul>
+                <li><strong>Risotto al Nero di Seppia:</strong> A Venetian specialty made with cuttlefish and its ink, creating a rich, flavorful dish.</li>
+                <li><strong>Fegato alla Veneziana:</strong> Venetian-style liver, usually served with onions and polenta.</li>
+                <li><strong>Tiramisu:</strong> This beloved dessert, originating from nearby Treviso, is a must-try when in Venice.</li>
+            </ul>
+        </section>
+
+        <section class="photo-gallery">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <img src="pictures/Venezia_Basilica_di_San_Marco_Fassade_2.jpg" title="St. Mark's Basilica" data-src="pictures/Venezia_Basilica_di_San_Marco_Fassade_2.jpg">
+                <img src="pictures/gondola.jpg" title="Gondola Ride" data-src="pictures/gondola.jpg">
+                <img src="pictures/rialtobridge.jpeg" title="Rialto Bridge" data-src="pictures/rialtobridge.jpeg">
+            </div>
+        </section>
+
+        <!-- Travel Journal Section -->
+        <section class="travel-journal">
+            <h3>Share Your Travel Experience</h3>
+            <form id="journalForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="e.g., Venice" required>
+
+                <label for="date">Date of Travel:</label>
+                <input type="date" id="date" required>
+
+                <label for="experience">Your Experience:</label>
+                <textarea id="experience" placeholder="Describe your trip..." rows="5" required></textarea>
+
+                <label for="image">Upload Image (optional):</label>
+                <input type="file" id="image" accept="image/*">
+
+                <button type="submit">Post Journal</button>
+            </form>
+
+            <div id="journalEntries">
+                <h3>Previous Journals</h3>
+                <!-- Dynamic journal entries will appear here -->
+            </div>
+        </section>
+
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <span class="prev" id="prevImage">&#10094;</span>
+            <span class="next" id="nextImage">&#10095;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">© 2025 Wonder & Unveil. All Rights Reserved.</p>
+    </footer>
+
+    <script src="searchandfilter.js"></script>
+    <script src="imageModal.js"></script>
+    <script src="journal.js"></script>
+</body>
+</html>

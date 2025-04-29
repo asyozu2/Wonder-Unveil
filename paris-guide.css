@@ -1,0 +1,320 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    animation: fadeInBody 0.5s ease-in;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('webfonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.navbar {
+    background: linear-gradient(to right, #0077b6, #90e0ef);
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+    animation: slideDown 0.5s ease-out;
+}
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: 40px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #caf0f8;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+}
+
+.search-input {
+    background: transparent;
+    width: 350px;
+    height: 35px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+.searchbar i {
+    color: #ffffff;
+    margin-left: 8px;
+}
+
+.search-input::placeholder {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.searchbar select {
+    background: #E0F7FA;
+    border: 1px solid #1B4965;
+    border-radius: 4px;
+    padding: 3px 6px;
+    color: #1B4965;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url("pictures/eiffeltower.jpg") no-repeat center/cover;
+    height: 300px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    transition: background-image 0.5s ease-in-out, color 0.3s ease;
+    animation: zoomIn 0.5s ease-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+@keyframes zoomIn {
+    from { transform: scale(1.1); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.hero h2 {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.7),
+    -2px -2px 4px rgba(0, 0, 0, 0.7),
+    2px -2px 4px rgba(0, 0, 0, 0.7),
+    -2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero .p1 {
+    font-size: 1.75rem;
+    font-style: italic;
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.7),
+    -2px -2px 4px rgba(0, 0, 0, 0.7),
+    2px -2px 4px rgba(0, 0, 0, 0.7),
+    -2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Guide Content */
+.guide-content {
+    margin: 40px auto;
+    max-width: 1100px;
+    padding: 10px 15px;
+    animation: listFadeIn 0.5s ease-out forwards;
+}
+.guide-content ul li:nth-child(1) { animation-delay: 0.6s; }
+.guide-content ul li:nth-child(2) { animation-delay: 0.8s; }
+.guide-content ul li:nth-child(3) { animation-delay: 1s; }
+.guide-content ul li:nth-child(4) { animation-delay: 1.2s; }
+.guide-content ul li:nth-child(5) { animation-delay: 1.4s; }
+
+@keyframes listFadeIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+h3 {
+    color: #0077b6;
+    margin-bottom: 15px;
+    animation: underlineGrow 0.5s ease-out forwards;
+}
+@keyframes underlineGrow {
+    from { background-size: 0 2px; }
+    to { background-size: 100% 2px; }
+}
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #0077b6, #90e0ef);
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.copyright {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.photo-gallery {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.photo-gallery .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows images to wrap to the next row on smaller screens */
+}
+
+/* Modal (Full-screen image) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Animation to fade in the modal */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 80%;
+    margin-top: 50px;
+    transform: scale(0.8); /* Initial scale smaller */
+    animation: zoomIn 0.5s forwards; /* Animation to zoom in the image */
+}
+
+#caption {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Image hover effect */
+.photo-gallery img {
+    width: 28%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for the modal fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation for zooming in the image */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8); /* Start small */
+    }
+    to {
+        transform: scale(1); /* End at normal size */
+    }
+}
+
+/* Animation for the modal close */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photo-gallery img {
+        width: 45%; /* Adjust width on smaller screens for better spacing */
+    }
+}
+.prev, .next { /* Arrows */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 2.5rem;
+    color: white;
+    user-select: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
